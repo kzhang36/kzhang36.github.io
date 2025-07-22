@@ -35,3 +35,13 @@ project-root/
 ├── docker/               # Docker & GeoServer setup (optional)
 ├── docs/                 # Technical documentation
 └── README.md
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/seismic
+    username: your_db_username
+    password: your_db_password
+
+🔐 application.yml is not included in the repo for security.
+Please copy application-example.yml to application.yml and fill in your own credentials.
