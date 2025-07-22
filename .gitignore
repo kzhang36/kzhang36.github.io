@@ -1,0 +1,12 @@
+# 忽略数据库配置等敏感文件
+application.yml
+.env
+
+# 忽略IDE自动生成的配置
+.idea/
+.vscode/
+
+# 忽略日志和编译文件
+logs/
+target/
+*.log
