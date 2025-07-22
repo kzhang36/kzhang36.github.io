@@ -1,0 +1,37 @@
+# Seismic WebGIS Platform
+
+A lightweight web-based GIS application for real-time earthquake data monitoring and visualization. Originally developed as a learning project, this platform has been refactored and modernized to align with open geospatial standards (OGC) and to support applications such as hydrological or emergency response mapping.
+
+## 🌐 Live Demo
+
+Coming soon via GitHub Pages or Docker Compose.
+
+## 🧭 Features
+
+- Fetch real-time earthquake data from CENC (China Earthquake Networks Center)
+- Store and manage spatial data with PostgreSQL + PostGIS
+- Visualize seismic events on an interactive map (OpenLayers)
+- Analyze patterns and display dynamic charts (ECharts)
+- Responsive UI with Vue2 + Element UI
+- Optional layer services via GeoServer or ArcGIS Server
+
+## 📦 Tech Stack
+
+| Layer         | Technologies                           |
+|---------------|----------------------------------------|
+| Frontend      | Vue2, OpenLayers, Element-UI, ECharts  |
+| Backend       | Spring Boot, MyBatis Plus, GeoTools    |
+| Database      | PostgreSQL + PostGIS                   |
+| Map Services  | GeoServer, ArcGIS Server (optional)    |
+| Data Source   | [WolfX CENC JSON API](https://api.wolfx.jp/cenc_eqlist.json) |
+
+## 📁 Project Structure
+
+```bash
+project-root/
+├── backend/              # Spring Boot API + data logic
+├── frontend/             # Vue2 Web App
+├── scripts/              # Scheduled data fetcher
+├── docker/               # Docker & GeoServer setup (optional)
+├── docs/                 # Technical documentation
+└── README.md
