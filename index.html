@@ -5,31 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ke Zhang – GIS Analyst</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #ecf0f1;
+      background-color: #f5f7fa;
       color: #2c3e50;
     }
 
-    .container {
+    .wrapper {
       display: flex;
-      max-width: 1000px;
+      max-width: 1200px;
       margin: 40px auto;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
     }
 
     .sidebar {
-      width: 300px;
-      background-color: #34495e;
+      background-color: #2c3e50;
       color: #ecf0f1;
+      width: 300px;
       padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
     }
 
     .sidebar h1 {
       font-size: 24px;
       margin-bottom: 5px;
+    }
+
+    .sidebar p {
+      font-size: 14px;
+      margin: 8px 0;
     }
 
     .sidebar a {
@@ -42,61 +54,77 @@
       text-decoration: underline;
     }
 
-    .section-title {
+    .sidebar .section-title {
       color: #1abc9c;
+      margin: 25px 0 10px;
       font-weight: bold;
-      margin: 30px 0 10px;
-      border-bottom: 1px solid #1abc9c;
-      padding-bottom: 5px;
-      font-size: 16px;
+      font-size: 15px;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      padding-bottom: 4px;
     }
 
     .sidebar ul {
       list-style: none;
       padding: 0;
       margin: 0;
+      font-size: 14px;
     }
 
     .sidebar li {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .main {
       flex: 1;
-      padding: 30px;
+      background-color: #ffffff;
+      padding: 40px;
     }
 
-    .main h2 {
-      font-size: 18px;
-      color: #2c3e50;
-      margin-top: 30px;
-      border-bottom: 1px solid #bdc3c7;
-      padding-bottom: 5px;
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      padding: 25px 30px;
+      margin-bottom: 30px;
     }
 
-    .main p, .main li {
-      font-size: 14px;
+    .card h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #34495e;
+      border-bottom: 2px solid #1abc9c;
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+
+    .card p, .card li {
+      font-size: 15px;
       line-height: 1.6;
     }
 
-    .main ul {
-      margin-top: 5px;
+    .card ul {
       padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .job {
+      margin-bottom: 20px;
     }
 
     .job-title {
       font-weight: bold;
-      margin-top: 20px;
+      font-size: 16px;
     }
 
     .job-subtitle {
       color: #7f8c8d;
-      font-size: 13px;
+      font-size: 14px;
+      margin-bottom: 5px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="wrapper">
     <div class="sidebar">
       <h1>Ke Zhang</h1>
       <p><strong>Email:</strong><br><a href="mailto:zkzhzll091062@gmail.com">zkzhzll091062@gmail.com</a></p>
@@ -105,68 +133,80 @@
 
       <div class="section-title">Core Competencies</div>
       <ul>
-        <li>Spatial Analysis & Mapping</li>
-        <li>Emergency GIS & SAR</li>
-        <li>UAV 3D Modeling</li>
-        <li>Python / ArcPy / SQL</li>
-        <li>QGIS / PostGIS / ArcGIS</li>
-        <li>OGC / NZGD2000 Standards</li>
+        <li>Spatial Analysis & Visualization</li>
+        <li>Emergency & Tactical GIS</li>
+        <li>UAV 3D Mapping & Modeling</li>
+        <li>Python Automation (ArcPy)</li>
+        <li>PostGIS & Spatial SQL</li>
+        <li>Open Geospatial Standards</li>
       </ul>
 
       <div class="section-title">Field Skills</div>
       <ul>
-        <li>Off-grid Navigation</li>
+        <li>Off-grid, Mountain, Maritime GIS</li>
         <li>Snowboarding, Archery</li>
         <li>Boxing & Martial Arts</li>
-        <li>.22 Rifle Handling</li>
+        <li>.22 Rifle Trained</li>
       </ul>
 
       <div class="section-title">Global Readiness</div>
       <ul>
-        <li>ANZSCO 232214 Tier 1</li>
-        <li>NZQA Level 7 Degree</li>
-        <li>LINZ / NZGD2000 Familiarity</li>
-        <li>Open to Relocation</li>
+        <li>ANZSCO Tier 1 (Spatial Scientist)</li>
+        <li>NZQA Level 7 Qualified</li>
+        <li>LINZ & NZGD2000 Familiar</li>
+        <li>Relocation & Remote Ready</li>
       </ul>
     </div>
 
     <div class="main">
-      <h2>Professional Summary</h2>
-      <p>Geospatial Analyst with tactical focus and a background in emergency response, UAV-based 3D workflows, and spatial intelligence. Strong in full-stack GIS pipelines and spatial decision support. Available for remote, hybrid, or field-based roles globally.</p>
+      <div class="card">
+        <h2>Professional Summary</h2>
+        <p>Geospatial Analyst with a tactical mindset and interdisciplinary background in emergency response, UAV-based 3D workflows, and open spatial data systems. Skilled in designing full-stack GIS pipelines, rapid spatial decision-making, and integrating field experience with spatial intelligence. Open to remote, hybrid, or field-based roles globally.</p>
+      </div>
 
-      <h2>Professional Experience</h2>
-      <div class="job-title">GIS & Data Analyst</div>
-      <div class="job-subtitle">RND4IMPACT (Remote) | Jun 2024 – Feb 2025</div>
-      <ul>
-        <li>Created spatial dashboards using ArcGIS Online and Python.</li>
-        <li>Automated shapefile pipelines across countries.</li>
-        <li>Visualized accessibility and vulnerability metrics.</li>
-      </ul>
+      <div class="card">
+        <h2>Professional Experience</h2>
+        <div class="job">
+          <div class="job-title">GIS & Data Analyst</div>
+          <div class="job-subtitle">RND4IMPACT (Remote) | Jun 2024 – Feb 2025</div>
+          <ul>
+            <li>Built spatial dashboards using ArcGIS Online and Python.</li>
+            <li>Automated cross-country shapefile pipelines.</li>
+            <li>Visualized accessibility & vulnerability metrics.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="job-title">SAR GIS Operator</div>
+          <div class="job-subtitle">Local Emergency Units, China | 2019 – 2022</div>
+          <ul>
+            <li>Directed live routing in comms blackout environments.</li>
+            <li>Created terrain-based rapid deployment routing templates.</li>
+            <li>Reduced acquisition time by 58% using QGIS + GPS.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="job-title">Data Processing Assistant</div>
+          <div class="job-subtitle">CDC, China | May 2022 – Jul 2022</div>
+          <ul>
+            <li>Processed emergency datasets for logistical planning.</li>
+            <li>Mapped infection and facility distribution.</li>
+          </ul>
+        </div>
+      </div>
 
-      <div class="job-title">SAR GIS Operator</div>
-      <div class="job-subtitle">Local Emergency Units, China | 2019 – 2022</div>
-      <ul>
-        <li>Directed live routing in comms blackout situations.</li>
-        <li>Developed terrain-based routing templates.</li>
-        <li>Reduced location acquisition time by 58% using offline QGIS + GPS.</li>
-      </ul>
+      <div class="card">
+        <h2>Representative Projects</h2>
+        <ul>
+          <li><strong>Urban Crime Patrol Optimization</strong> – ArcGIS + Python<br>Designed P-median patrol routes and coverage buffers; improved spatial efficiency by 18%.</li>
+          <li><strong>UAV-Based 3D Modeling</strong> – Pix4D + CloudCompare<br>Mid-resolution terrain reconstruction workflows.</li>
+          <li><strong>Search & Rescue GIS Templates</strong> – QGIS + GPS<br>Offline routing tools based on SAR terrain patterns.</li>
+        </ul>
+      </div>
 
-      <div class="job-title">Data Processing Assistant</div>
-      <div class="job-subtitle">CDC, China | May 2022 – Jul 2022</div>
-      <ul>
-        <li>Processed pandemic datasets for logistics support.</li>
-        <li>Mapped infection spread and medical facility coverage.</li>
-      </ul>
-
-      <h2>Representative Projects</h2>
-      <ul>
-        <li><strong>Urban Crime Patrol Optimization</strong> – ArcGIS + Python<br>P-median patrol routes, coverage buffers; improved spatial efficiency by 18%.</li>
-        <li><strong>UAV-Based 3D Modeling</strong> – Pix4D + CloudCompare<br>Developing mid-resolution terrain workflows.</li>
-        <li><strong>SAR GIS Templates</strong> – QGIS + GPS<br>Reusable offline tools based on terrain & field SAR logic.</li>
-      </ul>
-
-      <h2>Education</h2>
-      <p><strong>University at Buffalo, SUNY</strong> – B.S. in Geographic Information Science and Cartography (Feb 2024)</p>
+      <div class="card">
+        <h2>Education</h2>
+        <p><strong>University at Buffalo, SUNY</strong> – B.S. in Geographic Information Science and Cartography (Feb 2024)</p>
+      </div>
     </div>
   </div>
 </body>
