@@ -1,9 +1,15 @@
-package com.seismic.webgis.service;
-
-import com.seismic.webgis.entity.EarthquakeEvent;
-
+package com.example.seismicgis.service;
+import com.example.seismicgis.entity.Earthquake;
+ import com.example.seismicgis.repository.EarthquakeRepository;
+import org.springframework.stereotype.Service;
 import java.util.List;
-
-public interface EarthquakeEventService {
-    void saveOrUpdateEvents(List<EarthquakeEvent> events);
+@Service
+public class EarthquakeService {
+private final EarthquakeRepository repo;
+public EarthquakeService(EarthquakeRepository repo) {
+    this.repo = repo;
+}
+public List<Earthquake> getAll() {
+return repo.findAll();
+}
 }
