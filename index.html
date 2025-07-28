@@ -2,211 +2,166 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ke Zhang – GIS Analyst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ke Zhang - GIS Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f7fa;
+      font-family: 'Inter', sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      display: flex;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .sidebar {
+      width: 30%;
+      background: #e9f1f7;
+      padding: 20px;
+      box-sizing: border-box;
+      border-right: 1px solid #ccc;
+    }
+    .main {
+      width: 70%;
+      padding: 30px;
+      box-sizing: border-box;
+    }
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 5px;
       color: #2c3e50;
     }
-
-    .wrapper {
-      display: flex;
-      max-width: 1200px;
-      margin: 40px auto;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      border-radius: 12px;
-      overflow: hidden;
-    }
-
-    .sidebar {
-      background-color: #2c3e50;
-      color: #ecf0f1;
-      width: 300px;
-      padding: 30px 20px;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .sidebar h1 {
-      font-size: 24px;
-      margin-bottom: 5px;
-    }
-
-    .sidebar p {
-      font-size: 14px;
-      margin: 8px 0;
-    }
-
-    .sidebar a {
-      color: #1abc9c;
-      text-decoration: none;
-      word-break: break-word;
-    }
-
-    .sidebar a:hover {
-      text-decoration: underline;
-    }
-
-    .sidebar .section-title {
-      color: #1abc9c;
-      margin: 25px 0 10px;
-      font-weight: bold;
-      font-size: 15px;
-      border-bottom: 1px solid rgba(255,255,255,0.2);
+    h2 {
+      font-size: 1.2em;
+      color: #1a5276;
+      border-bottom: 2px solid #3498db;
       padding-bottom: 4px;
+      margin-top: 30px;
     }
-
-    .sidebar ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      font-size: 14px;
+    h3 {
+      margin: 10px 0 5px;
+      font-size: 1em;
+      color: #34495e;
     }
-
-    .sidebar li {
+    ul {
+      padding-left: 20px;
+      margin: 5px 0 15px;
+    }
+    li {
       margin-bottom: 8px;
     }
-
-    .main {
-      flex: 1;
-      background-color: #ffffff;
-      padding: 40px;
+    .highlight {
+      color: #e74c3c;
+      font-weight: bold;
     }
-
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      padding: 25px 30px;
-      margin-bottom: 30px;
+    .contact a, a {
+      color: #3498db;
+      text-decoration: none;
+      word-break: break-all;
     }
-
-    .card h2 {
-      font-size: 20px;
-      margin-bottom: 10px;
-      color: #34495e;
-      border-bottom: 2px solid #1abc9c;
-      display: inline-block;
-      padding-bottom: 4px;
-    }
-
-    .card p, .card li {
-      font-size: 15px;
-      line-height: 1.6;
-    }
-
-    .card ul {
-      padding-left: 20px;
+    .contact {
+      font-size: 0.9em;
       margin-top: 10px;
     }
-
-    .job {
+    .section {
       margin-bottom: 20px;
     }
-
-    .job-title {
-      font-weight: bold;
-      font-size: 16px;
+    .badge {
+      display: inline-block;
+      background: #3498db;
+      color: white;
+      font-size: 0.75em;
+      padding: 2px 6px;
+      margin: 2px;
+      border-radius: 4px;
     }
-
-    .job-subtitle {
-      color: #7f8c8d;
-      font-size: 14px;
-      margin-bottom: 5px;
+    .label {
+      font-weight: 600;
+      margin-top: 10px;
+      display: block;
+      font-size: 0.9em;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <div class="wrapper">
+  <div class="container">
     <div class="sidebar">
-      <h1>Ke Zhang</h1>
-      <p><strong>Email:</strong><br><a href="mailto:zkzhzll091062@gmail.com">zkzhzll091062@gmail.com</a></p>
-      <p><strong>LinkedIn:</strong><br><a href="https://www.linkedin.com/in/ke-zhang-a25146201" target="_blank">linkedin.com/in/ke-zhang</a></p>
-      <p><strong>GitHub:</strong><br><a href="https://kzhang36.github.io" target="_blank">kzhang36.github.io</a></p>
+      <h2>Contact</h2>
+      <div class="contact">
+        📧 <a href="mailto:zkzhzll091062@gmail.com">zkzhzll091062@gmail.com</a><br />
+        🌍 Shenzhen, China<br />
+        🔗 <a href="https://linkedin.com/in/ke-zhang-a25146201">LinkedIn</a><br />
+        💻 <a href="https://kzhang36.github.io">Portfolio</a>
+      </div>
 
-      <div class="section-title">Core Competencies</div>
-      <ul>
-        <li>Spatial Analysis & Visualization</li>
-        <li>Emergency & Tactical GIS</li>
-        <li>UAV 3D Mapping & Modeling</li>
-        <li>Python Automation (ArcPy)</li>
-        <li>PostGIS & Spatial SQL</li>
-        <li>Open Geospatial Standards</li>
-      </ul>
+      <h2>Skills</h2>
+      <span class="label">GIS Tools</span>
+      <div class="badge">ArcGIS Pro</div><div class="badge">QGIS</div><div class="badge">ArcPy</div>
+      <span class="label">Programming</span>
+      <div class="badge">Python</div><div class="badge">Spring Boot</div><div class="badge">SQL</div>
+      <span class="label">Visualization</span>
+      <div class="badge">Leaflet</div><div class="badge">Vue.js</div><div class="badge">REST API</div>
+      <span class="label">3D & UAV</span>
+      <div class="badge">Pix4D</div><div class="badge">CloudCompare</div>
 
-      <div class="section-title">Field Skills</div>
+      <h2>Preparedness</h2>
       <ul>
-        <li>Off-grid, Mountain, Maritime GIS</li>
-        <li>Snowboarding, Archery</li>
-        <li>Boxing & Martial Arts</li>
-        <li>.22 Rifle Trained</li>
-      </ul>
-
-      <div class="section-title">Global Readiness</div>
-      <ul>
-        <li>ANZSCO Tier 1 (Spatial Scientist)</li>
-        <li>NZQA Level 7 Qualified</li>
-        <li>LINZ & NZGD2000 Familiar</li>
-        <li>Relocation & Remote Ready</li>
+        <li>NZ Green List Eligible (ANZSCO 232214)</li>
+        <li>Studying IHO S-100 & NZGD2000</li>
+        <li>Cross-cultural team experience</li>
+        <li>Enrolled in Esri Water GIS Course</li>
       </ul>
     </div>
 
     <div class="main">
-      <div class="card">
-        <h2>Professional Summary</h2>
-        <p>Geospatial Analyst with a tactical mindset and interdisciplinary background in emergency response, UAV-based 3D workflows, and open spatial data systems. Skilled in designing full-stack GIS pipelines, rapid spatial decision-making, and integrating field experience with spatial intelligence. Open to remote, hybrid, or field-based roles globally.</p>
-      </div>
+      <h1>Ke Zhang</h1>
+      <p><strong>GIS Analyst</strong> skilled in automation, hydrology integration, and spatial data development. Passionate about modernizing marine charting and supporting digital transformation with LINZ.</p>
 
-      <div class="card">
-        <h2>Professional Experience</h2>
-        <div class="job">
-          <div class="job-title">GIS & Data Analyst</div>
-          <div class="job-subtitle">RND4IMPACT (Remote) | Jun 2024 – Feb 2025</div>
-          <ul>
-            <li>Built spatial dashboards using ArcGIS Online and Python.</li>
-            <li>Automated cross-country shapefile pipelines.</li>
-            <li>Visualized accessibility & vulnerability metrics.</li>
-          </ul>
-        </div>
-        <div class="job">
-          <div class="job-title">SAR GIS Operator</div>
-          <div class="job-subtitle">Local Emergency Units, China | 2019 – 2022</div>
-          <ul>
-            <li>Directed live routing in comms blackout environments.</li>
-            <li>Created terrain-based rapid deployment routing templates.</li>
-            <li>Reduced acquisition time by 58% using QGIS + GPS.</li>
-          </ul>
-        </div>
-        <div class="job">
-          <div class="job-title">Data Processing Assistant</div>
-          <div class="job-subtitle">CDC, China | May 2022 – Jul 2022</div>
-          <ul>
-            <li>Processed emergency datasets for logistical planning.</li>
-            <li>Mapped infection and facility distribution.</li>
-          </ul>
-        </div>
-      </div>
+      <h2>Professional Highlights</h2>
+      <ul>
+        <li>Optimized patrol coverage +18% using ArcGIS + Python.</li>
+        <li>Reduced SAR terrain mapping time by 58% with offline QGIS routing.</li>
+        <li>Cut delivery time by 30% through shapefile automation at RND4IMPACT.</li>
+        <li>Processed 50GB LiDAR to 3D terrain with 90% accuracy (CloudCompare).</li>
+        <li>Built Spring Boot GIS backend (PostGIS) serving 100+ seismic datasets.</li>
+      </ul>
 
-      <div class="card">
-        <h2>Representative Projects</h2>
-        <ul>
-          <li><strong>Urban Crime Patrol Optimization</strong> – ArcGIS + Python<br>Designed P-median patrol routes and coverage buffers; improved spatial efficiency by 18%.</li>
-          <li><strong>UAV-Based 3D Modeling</strong> – Pix4D + CloudCompare<br>Mid-resolution terrain reconstruction workflows.</li>
-          <li><strong>Search & Rescue GIS Templates</strong> – QGIS + GPS<br>Offline routing tools based on SAR terrain patterns.</li>
-        </ul>
-      </div>
+      <h2>Education</h2>
+      <h3>SUNY Buffalo, B.S. GIS & Cartography</h3>
+      <ul>
+        <li>GIS for Environ Modeling: 90% accuracy in spatial simulations</li>
+        <li>Locational Analysis: Optimization for hydrology planning</li>
+        <li>ML for GIS: Python models for resource prediction</li>
+      </ul>
 
-      <div class="card">
-        <h2>Education</h2>
-        <p><strong>University at Buffalo, SUNY</strong> – B.S. in Geographic Information Science and Cartography (Feb 2024)</p>
-      </div>
+      <h2>Experience</h2>
+      <h3>GIS & Data Analyst | RND4IMPACT</h3>
+      <p>Remote | 2024–2025</p>
+      <ul>
+        <li>Automated GIS workflows for 5 countries’ spatial dashboards.</li>
+        <li>Delivered real-time accessibility maps for emergency planning.</li>
+      </ul>
+
+      <h3>Search & Rescue GIS Operator</h3>
+      <p>Local Emergency Units | 2019–2022</p>
+      <ul>
+        <li>Led GIS routing in 10+ field missions across 200km² terrain.</li>
+        <li>Created templates reused across SAR teams, improving consistency.</li>
+      </ul>
+
+      <h2>Projects</h2>
+      <h3>Seismic GIS Light <a href="https://github.com/kzhang36/seismic-gis-light">(GitHub)</a></h3>
+      <ul>
+        <li>Vue + Leaflet frontend with Spring Boot backend</li>
+        <li>Processes seismic & hydrology data for LINZ-like charting</li>
+        <li>Working toward AI-based hazard prediction and validation</li>
+      </ul>
     </div>
   </div>
 </body>
