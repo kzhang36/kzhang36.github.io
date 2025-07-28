@@ -1,86 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ke Zhang - GIS Analyst</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snow Zhang (Zhang Ke) – GIS Analyst</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: "Segoe UI", sans-serif;
+      display: flex;
+      min-height: 100vh;
+    }
+    aside {
+      background-color: #2e2e2e;
+      color: #fff;
+      width: 280px;
+      padding: 30px 20px;
+    }
+    aside h1 {
+      font-size: 1.6em;
+      margin-bottom: 20px;
+    }
+    aside p, aside a {
+      font-size: 0.95em;
+      margin: 10px 0;
+      color: #ccc;
+      text-decoration: none;
+    }
+    aside .label {
+      color: #aaa;
+      text-transform: uppercase;
+      font-size: 0.75em;
+      margin-top: 30px;
+      margin-bottom: 5px;
+    }
+    main {
+      flex: 1;
+      background-color: #f4f4f4;
+      padding: 40px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    section h2 {
+      font-size: 1.4em;
+      color: #333;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .job, .edu, .proj {
+      margin-bottom: 25px;
+    }
+    .job h3, .edu h3, .proj h3 {
+      font-size: 1.1em;
+      color: #111;
+    }
+    .job span, .edu span {
+      font-size: 0.9em;
+      color: #777;
+    }
+    ul {
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+    li {
+      font-size: 0.95em;
+      color: #444;
+      margin-bottom: 5px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Ke Zhang</h1>
-    <p>
-        Email: <a href="mailto:zkzhzll091062@gmail.com">zkzhzll091062@gmail.com</a> | 
-        Location: Shenzhen, China | 
-        LinkedIn: <a href="https://linkedin.com/in/ke-zhang-a25146201">linkedin.com/in/ke-zhang-a25146201</a> | 
-        GitHub: <a href="https://kzhang36.github.io">kzhang36.github.io</a>
-    </p>
+  <aside>
+    <h1>Snow Zhang<br><span style="font-size:0.8em;">(Zhang Ke / 张可)</span></h1>
+    <div class="label">Location</div>
+    <p>Shenzhen, China</p>
+    <div class="label">Email</div>
+    <p><a href="mailto:zkzhzll091062@gmail.com">zkzhzll091062@gmail.com</a></p>
+    <div class="label">Portfolio</div>
+    <p><a href="https://kzhang36.github.io" target="_blank">kzhang36.github.io</a></p>
+    <div class="label">GitHub</div>
+    <p><a href="https://github.com/kzhang36/seismic-gis-light" target="_blank">/seismic-gis-light</a></p>
+  </aside>
+  <main>
+    <section>
+      <h2>Experience</h2>
 
-    <h2>Professional Summary</h2>
-    <p>
-        GIS Analyst with a B.S. in Geographic Information Science and Cartography from SUNY Buffalo (2024), skilled in ArcGIS, QGIS, and Python automation. Experienced in spatial analysis, emergency response, and full-stack geospatial development. Currently enhancing skills in Hydraulic Chart and earthquake-hydrology integration for LINZ applications. Self-motivated to excel in energy-related geospatial solutions. Eligible under New Zealand Green List (ANZSCO 232214 – Spatial Scientist), ready to relocate or start remotely.
-    </p>
+      <div class="job">
+        <h3>GIS & Data Analyst <span> | Remote · 2022 – Present</span></h3>
+        <ul>
+          <li>Developed a full-stack WebGIS platform using Spring Boot, Vue2, OpenLayers, and PostGIS.</li>
+          <li>Automated spatial workflows using Python and R.</li>
+          <li>Integrated APIs, deployed cloud-based spatial databases.</li>
+          <li>Maintained code and documentation on GitHub.</li>
+        </ul>
+      </div>
 
-    <h2>Professional Highlights</h2>
-    <ul>
-        <li>Optimized urban crime patrol routes using ArcGIS Network Analyst and Python, increasing coverage by 18% across 50km².</li>
-        <li>Developed offline QGIS routing tools for 3 search and rescue teams, reducing location acquisition time by 58% over 60km² terrain.</li>
-        <li>Automated shapefile preprocessing for multi-country spatial dashboards at RND4IMPACT, cutting delivery time by 30%.</li>
-        <li>Generated a 15km² UAV orthophoto model using Pix4D, reducing processing time by 25% (updated July 2025).</li>
-        <li>Processed 50GB point cloud data with CloudCompare, achieving 90% accuracy in 3D terrain reconstruction.</li>
-        <li>Built a Spring Boot backend for Seismic GIS Light[](https://github.com/kzhang36/seismic-gis-light), processing 100+ earthquake datasets with 85% accuracy using PostGIS and RESTful APIs.</li>
-        <li>Developing Seismic GIS Light (WIP, https://github.com/kzhang36/seismic-gis-light), a Vue.js + Leaflet app with Spring Boot backend, integrating seismic and hydrological data over 50km² for LINZ Hydraulic Chart applications.</li>
-    </ul>
+      <div class="job">
+        <h3>GIS Intern / Research Assistant <span> | SUNY Buffalo · 2021 – 2022</span></h3>
+        <ul>
+          <li>Conducted land use, hydrology, and satellite imagery analysis.</li>
+          <li>Used ArcGIS Pro, QGIS, and Python for data processing and map production.</li>
+        </ul>
+      </div>
+    </section>
 
-    <h2>Education</h2>
-    <h3>B.S. in Geographic Information Science and Cartography</h3>
-    <p>University at Buffalo, SUNY | Feb 2024</p>
-    <ul>
-        <li>Key Courses:
-            <ul>
-                <li>GEO 479 GIS for Environ Modeling: Applied spatial modeling, achieving 90% accuracy.</li>
-                <li>GEO 481 Geographical Information Systems: Mastered ArcGIS and QGIS, mapping 100+ km² with 95% precision.</li>
-                <li>GEO 482 Locational Analysis: Developed optimization models, relevant to Hydraulic Chart planning.</li>
-                <li>CSE 474 Introduction to Machine Learning: Used Python for geospatial analysis, exploring resource management.</li>
-            </ul>
-        </li>
-        <li>GPA: 3.6 (if applicable)</li>
-    </ul>
+    <section>
+      <h2>Education</h2>
+      <div class="edu">
+        <h3>University at Buffalo, SUNY</h3>
+        <span>B.S. in Geographic Information Science – Feb 2024</span>
+      </div>
+    </section>
 
-    <h2>Technical Skills</h2>
-    <ul>
-        <li>GIS: ArcGIS Pro, QGIS, ArcGIS Online, Google Earth Engine</li>
-        <li>Programming: Python (ArcPy, Pandas, Flask), Java (Spring Boot), SQL, R</li>
-        <li>Frontend: Vue 3, Leaflet (WIP)</li>
-        <li>3D & UAV: Pix4D (orthophoto modeling), CloudCompare (point cloud processing), UAV flight planning (in progress)</li>
-        <li>Database: PostGIS, Spatial SQL, GeoDa, PostgreSQL</li>
-        <li>Other: Git, API development (RESTful), Maven, npm, First Aid Certified, Driver’s License (USA)</li>
-    </ul>
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>GIS:</strong> ArcGIS Pro, QGIS, ArcGIS Online, Survey123, Collector</li>
+        <li><strong>Programming:</strong> Python, R, JavaScript, SQL</li>
+        <li><strong>Tools:</strong> OpenLayers, PostGIS, GeoServer, Git</li>
+        <li><strong>Cloud & DB:</strong> AWS (S3, Lambda), PostgreSQL</li>
+        <li><strong>Languages:</strong> English (Professional), Mandarin (Native)</li>
+      </ul>
+    </section>
 
-    <h2>Professional Experience</h2>
-    <h3>GIS & Data Analyst</h3>
-    <p>RND4IMPACT (Remote) | Jun 2024 – Feb 2025</p>
-    <ul>
-        <li>Built interactive spatial dashboards with ArcGIS Online and Python, supporting global initiatives.</li>
-        <li>Automated preprocessing for 50+ datasets across 5+ countries, boosting efficiency by 25%.</li>
-        <li>Visualized accessibility and vulnerability layers, aiding resource allocation decisions.</li>
-    </ul>
-    <h3>Search & Rescue GIS Operator</h3>
-    <p>Local Emergency Units, China | 2019 – 2022</p>
-    <ul>
-        <li>Provided real-time GIS routing for 3 teams in challenging terrains, using offline QGIS tools.</li>
-        <li>Led mapping for 10+ missions, covering 200km², reducing detection time by 58%.</li>
-        <li>Created reusable routing templates, enhancing future operations.</li>
-    </ul>
-
-    <h2>New Zealand Preparedness</h2>
-    <ul>
-        <li>Green List Eligible (ANZSCO 232214 – Spatial Scientist)</li>
-        <li>NZQA-recognized degree (Level 7 equivalent)</li>
-        <li>Self-studied NZGD2000 coordinate system, familiar with LINZ data standards</li>
-        <li>Adapted to cross-cultural teams during RND4IMPACT, managing 5+ time zones</li>
-        <li>Long-term interest in GIS for energy (hydrology, forestry), starting with LINZ Hydraulic Chart</li>
-        <li>Ready to relocate or start remotely, supporting AEWV process</li>
-        <li>Enrolled in Esri Introduction to Water Resources GIS (ongoing, July 2025), enhancing Seismic GIS Light for LINZ</li>
-        <li>Valid driver’s license, First Aid trained</li>
-    </ul>
+    <section>
+      <h2>Projects</h2>
+      <div class="proj">
+        <h3><a href="https://github.com/kzhang36/seismic-gis-light" target="_blank">Seismic GIS Light – Earthquake WebGIS</a></h3>
+        <ul>
+          <li>Interactive earthquake map with API query, search, and filter functions.</li>
+          <li>Stack: Spring Boot + Vue2 + OpenLayers + PostGIS</li>
+          <li>Inspired by Koordinates and LINZ open data structures.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
