@@ -1,27 +1,17 @@
-package com.seismic.webgis.controller;
-
-import com.seismic.webgis.entity.EarthquakeEvent;
-import com.seismic.webgis.service.EarthquakeEventService;
-import org.springframework.beans.factory.annotation.Autowired;
+package com.example.seismicgis.controller;
+import com.example.seismicgis.entity.Earthquake;
+import com.example.seismicgis.service.EarthquakeService;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
-
 @RestController
 @RequestMapping("/api/earthquakes")
 public class EarthquakeController {
-
-    @Autowired
-    private EarthquakeEventService eventService;
-
-    @PostMapping
-    public String upload(@RequestBody List<EarthquakeEvent> events) {
-        eventService.saveOrUpdateEvents(events);
-        return "OK";
-    }
-
-    @GetMapping
-    public String hello() {
-        return "Earthquake WebGIS backend is running.";
-    }
+private final EarthquakeService service;
+public EarthquakeController(EarthquakeService service) {
+    this.service = service;
+}
+@GetMapping
+public List<Earthquake> getAll() {
+    return service.getAll();
+}
 }
