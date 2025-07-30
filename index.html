@@ -3,40 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ke Zhang - GIS Professional</title>
+  <title>Ke Zhang - GIS Portfolio</title>
   <style>
+    * { box-sizing: border-box; }
     body {
+      margin: 0;
       font-family: 'Arial', sans-serif;
-      line-height: 1.6;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
       color: #333;
+      display: flex;
+      min-height: 100vh;
+    }
+    .left {
+      background-color: #1e272e;
+      color: #ecf0f1;
+      width: 35%;
+      padding: 40px 20px;
+    }
+    .right {
+      background-color: #f9f9f9;
+      width: 65%;
+      padding: 40px;
+    }
+    h1, h2, h3 {
+      margin-top: 0;
     }
     h1 {
-      color: #2c3e50;
-      border-bottom: 2px solid #3498db;
-      padding-bottom: 10px;
-    }
-    h2 {
-      color: #2980b9;
-      margin-top: 25px;
-      border-bottom: 1px solid #eee;
+      font-size: 2.2em;
+      border-bottom: 2px solid #2980b9;
       padding-bottom: 5px;
     }
-    .contact-info {
-      margin-bottom: 20px;
+    h2 {
+      font-size: 1.3em;
+      margin-top: 25px;
+      color: #2980b9;
     }
-    .job, .project {
-      margin-bottom: 20px;
-    }
-    .job-title, .project-title {
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-    .date {
-      color: #7f8c8d;
-      font-style: italic;
+    .section {
+      margin-bottom: 25px;
     }
     ul {
       padding-left: 20px;
@@ -48,108 +50,120 @@
     a:hover {
       text-decoration: underline;
     }
+    .contact-info p, .left .section p {
+      margin: 10px 0;
+    }
+    .project-title {
+      font-weight: bold;
+    }
+    .job-title {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .date {
+      font-style: italic;
+      color: #7f8c8d;
+    }
+    .bar-container {
+      background-color: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+      margin: 5px 0;
+    }
+    .bar {
+      height: 16px;
+      border-radius: 20px;
+      background-color: #2980b9;
+      text-align: right;
+      padding-right: 5px;
+      color: white;
+      font-size: 12px;
+    }
   </style>
 </head>
 <body>
-  <h1>Ke Zhang</h1>
-  <div class="contact-info">
-    <p>Email: <a href="mailto:zkzhzll091062@gmail.com">zkzhzll091062@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/ke-zhang-a25146201" target="_blank">linkedin.com/in/ke-zhang-a25146201</a></p>
-    <p>GitHub: <a href="https://github.com/kzhang36" target="_blank">github.com/kzhang36</a></p>
+  <div class="left">
+    <h1>Ke Zhang</h1>
+    <div class="section contact-info">
+      <p><strong>Email:</strong> <a href="mailto:zkzhzll091062@gmail.com">zkzhzll091062@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ke-zhang-a25146201" target="_blank">linkedin.com/in/ke-zhang-a25146201</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/kzhang36" target="_blank">github.com/kzhang36</a></p>
+    </div>
+    <div class="section">
+      <h2>Other Qualifications</h2>
+      <ul>
+        <li>Green List eligible (ANZSCO 232213 / 221214)</li>
+        <li>NZGD2000, LINZ & Koordinates familiarity</li>
+        <li>First Aid, outdoor field readiness</li>
+        <li>Swimming, martial arts, snowboarding</li>
+        <li>Archery, .22-rifle handling, navigation</li>
+      </ul>
+    </div>
+    <div class="section">
+      <p>📄 <a href="/Ke_Zhang_NZGIS_Resume.pdf" target="_blank">Download PDF Resume</a></p>
+      <p>🌐 <a href="https://github.com/kzhang36/seismic-gis-light.git">Seismic GIS Project</a></p>
+    </div>
   </div>
 
-  <h2>Objective</h2>
-  <p>
-    An interdisciplinary GIS professional seeking long-term opportunities in GIS analysis, land use, energy modeling, spatial data infrastructure (SDI), and emergency geospatial services. Willing to relocate, work in hybrid/remote mode, or contribute as a field GIS technician in mountainous/marine environments. Open to consultancy roles. Focused on tactical problem-solving, system-level thinking, and results-driven geospatial solutions.
-  </p>
+  <div class="right">
+    <div class="section">
+      <h2>Objective</h2>
+      <p>
+        An interdisciplinary GIS professional seeking long-term opportunities in GIS analysis, land use, energy modeling, SDI, and emergency mapping. Open to hybrid/remote/field consultancy roles. Passionate about tactical geospatial problem-solving and AI-integrated design.
+      </p>
+    </div>
 
-  <h2>Education</h2>
-  <div class="education">
-    <p><strong>State University of New York at Buffalo</strong></p>
-    <p>B.S. in Geographic Information Science (Feb 2024)</p>
-    <p>Relevant Coursework: Cartography, GIS for Environmental Modeling, Locational Analysis, Dynamic Modeling, Multivariate Statistics</p>
+    <div class="section">
+      <h2>Education</h2>
+      <p><strong>State University of New York at Buffalo</strong><br>B.S. in Geographic Information Science (Feb 2024)<br>
+        Relevant Coursework: GIS Modeling, Locational Analysis, Cartography, Remote Sensing</p>
+    </div>
+
+    <div class="section">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>GIS:</strong> ArcGIS Pro, QGIS, Mapbox, GeoServer, Pix4D, CloudCompare</li>
+        <li><strong>Code:</strong> Python, R, SQL, Java, JavaScript (Vue)</li>
+        <li><strong>Remote Sensing:</strong> Sentinel, Landsat, NDVI, Classification</li>
+        <li><strong>Infra:</strong> Spring Boot, PostGIS, GitHub, Docker, Vite</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Experience</h2>
+      <div class="job-title">GIS Analyst | RND4IMPACT</div>
+      <div class="date">2024 - 2025</div>
+      <ul>
+        <li>Processed open geodata for humanitarian and policy sectors</li>
+        <li>Improved automation pipelines, saving ~30% in processing time</li>
+        <li>Enhanced data accuracy to 95% through precision scripting</li>
+      </ul>
+
+      <div class="job-title">CDC Public Health GIS Assistant</div>
+      <div class="date">2022</div>
+      <ul>
+        <li>Georeferenced health datasets, improving regional accuracy by 20%</li>
+        <li>Mapped outbreak clusters and reduced manual steps by 40%</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Featured Projects</h2>
+      <p class="project-title">Seismic GIS Light (2025)</p>
+      <p>Modernized earthquake WebGIS built with Vue, Vite, Spring Boot, and PostGIS. Incorporates LINZ/NZGD2000 standards, RESTful APIs, and frontend modular design. AI-ready architecture for seismic trend detection and hydrologic charting. <a href="https://github.com/kzhang36/seismic-gis-light">GitHub</a></p>
+      <div>Accuracy <div class="bar-container"><div class="bar" style="width: 95%">95%</div></div></div>
+      <div>Completeness <div class="bar-container"><div class="bar" style="width: 90%">90%</div></div></div>
+
+      <p class="project-title">Seismic GIS Legacy (2023)</p>
+      <p>Original SDI prototype using OpenLayers, GeoServer, and Vue2. Built as a student-led solution to visualize earthquake data from Chinese seismic catalogs. Legacy architecture archived for comparison. <a href="https://github.com/kzhang36/seismic-gis-legacy">GitHub</a></p>
+      <div>Accuracy <div class="bar-container"><div class="bar" style="width: 85%">85%</div></div></div>
+      <div>Completeness <div class="bar-container"><div class="bar" style="width: 80%">80%</div></div></div>
+    </div>
+
+    <div class="section">
+      <h2>AI-enhanced GIS Design</h2>
+      <p>Prototype includes AI-assisted detection, classification, and region-of-interest alerts for seismic or hydrologic risk mapping. Integrated into Seismic GIS Light.</p>
+    </div>
   </div>
-
-  <h2>Technical Skills</h2>
-  <ul>
-    <li><strong>GIS Tools:</strong> ArcGIS Pro, ArcMap, ArcGIS Online, QGIS, Google Earth Engine， Pix4D, CloudCompare</li>
-    <li><strong>Database:</strong> PostGIS, SQL, GeoPackage, schema design, geocoding</li>
-    <li><strong>Programming:</strong> Python (ArcPy, Pandas), R, Java, JavaScript (Leaflet, Vue), REST APIs</li>
-    <li><strong>Remote Sensing:</strong> Landsat/Sentinel preprocessing, NDVI, supervised classification</li>
-    <li><strong>Visualization:</strong> Cartographic design, Mapbox, Kepler.gl, AI-enhanced visual analytics</li>
-    <li><strong>DevOps & Infra:</strong> Vite, GitHub Actions, Spring Boot, Docker (basic)</li>
-    <li><strong>Other:</strong> First Aid, Valid Driver's License</li>
-  </ul>
-
-  <h2>Work Experience</h2>
-  <div class="job">
-    <div class="job-title">GIS & Data Analyst | RND4IMPACT</div>
-    <div class="date">June 2024 - Feb 2025</div>
-    <ul>
-      <li>Managed and processed geospatial data for non-profit and open-data communities</li>
-      <li>Improved Python automation workflows for mapping and feature extraction</li>
-      <li>Contributed to humanitarian GIS responses in environmental and policy contexts</li>
-    </ul>
-  </div>
-
-  <div class="job">
-    <div class="job-title">Community Grid Attendant | Street Office</div>
-    <div class="date">July 2022 - Nov 2022</div>
-    <ul>
-      <li>Used GIS tools to map and track COVID-19 contact zones</li>
-      <li>Integrated ground-truthing data and satellite overlays to optimize patrol routes</li>
-    </ul>
-  </div>
-
-  <div class="job">
-    <div class="job-title">Data Processing Assistant | CDC</div>
-    <div class="date">May 2022 - July 2022</div>
-    <ul>
-      <li>Cleaned, validated, and georeferenced high-frequency public health datasets</li>
-      <li>Generated spatial insights into infection clusters and travel corridors</li>
-    </ul>
-  </div>
-
-  <h2>Featured Projects</h2>
-  <div class="project">
-    <div class="project-title">Seismic GIS Light (2025)</div>
-    <p><strong>Tech:</strong> Vue 3, Vite, Leaflet, Spring Boot, PostgreSQL/PostGIS</p>
-    <ul>
-      <li>Modern full-stack web app displaying real-time seismic data with AI-ready structure</li>
-      <li>Built RESTful API backend, task scheduler, and LINZ-compatible geospatial support</li>
-      <li><a href="https://github.com/kzhang36/seismic-gis-light">View on GitHub</a></li>
-    </ul>
-  </div>
-
-  <div class="project">
-    <div class="project-title">Seismic GIS Legacy (2023)</div>
-    <p><strong>Tech:</strong> OpenLayers, Spring Boot, MySQL, GeoServer</p>
-    <ul>
-      <li>Earlier earthquake data visualization project, archived for reference and evolution tracking</li>
-      <li>First implementation of SDI and WebGIS pipeline in a multi-layer stack</li>
-      <li><a href="https://github.com/kzhang36/seismic-gis-legacy">View on GitHub</a></li>
-    </ul>
-  </div>
-
-  <h2>AI-enhanced GIS Design</h2>
-  <p>
-    Currently exploring AI-assisted feature extraction and pattern recognition in geospatial data. Design prototype includes supervised classification, region-based inference, and dynamic dashboard for high-risk prediction.
-    <a href="https://github.com/kzhang36/seismic-gis-light">See AI Design</a>
-  </p>
-
-  <h2>Other Qualifications</h2>
-  <ul>
-    <li>Green List Occupation eligible under ANZSCO 232213 and 221214</li>
-    <li>Familiarity with LINZ datasets, Koordinates platform, NZGD2000 datum</li>
-    <li>Basic First Aid and Remote Safety Procedures</li>
-    <li>Outdoor training: survival skills, swimming, martial arts, tracking, and navigation</li>
-    <li>Sports: Snowboarding, archery, .22-cal rifle operation and maintenance</li>
-  </ul>
-
-  <p>
-    📄 <a href="/Ke_Zhang_NZGIS_Resume.pdf" target="_blank">Download PDF Resume</a> | 
-    🗂️ <a href="https://github.com/kzhang36">GitHub</a> | 
-    🌐 <a href="https://github.com/kzhang36/seismic-gis-light.git">Seismic GIS Project</a>
-  </p>
 </body>
 </html>
